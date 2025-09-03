@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Page</h1>
+    <nav>
+      <a href="#formSection">Form</a> | 
+      <a href="#features">Features</a>
+    </nav>
+  </header>
+
+  <!-- Form Section -->
+  <section id="formSection">
+    <h2>Register Here</h2>
+    <form id="registerForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Interactive Features Section -->
+  <section id="features">
+    <h2>Interactive Features</h2>
+
+    <!-- Feature 1: Change Background Color -->
+    <button id="colorBtn">Change Background Color</button>
+
+    <!-- Feature 2: Counter -->
+    <div>
+      <h3>Click Counter</h3>
+      <button id="countBtn">Click Me</button>
+      <p>Count: <span id="counter">0</span></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
